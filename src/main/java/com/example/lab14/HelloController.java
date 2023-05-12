@@ -1,14 +1,47 @@
 package com.example.lab14;
-
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 
-public class HelloController {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class HelloController implements Initializable {
     @FXML
-    private Label welcomeText;
+    private Button addBTN;
 
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    private TableColumn<?, ?> amountTC;
+
+    @FXML
+    private TextField balanceTF;
+
+    @FXML
+    private Button combinadaBTN;
+
+    @FXML
+    private TableColumn<?, ?> dateTC;
+
+    @FXML
+    private TableColumn<?, ?> descriptionTC;
+
+    @FXML
+    private Button gastosBTN;
+
+    @FXML
+    private Button ingresosBTN;
+
+    @FXML
+    private TableView<?> listTV;
+
+    @FXML
+    private TableColumn<?, ?> typeTC;
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+
     }
 }
