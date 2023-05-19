@@ -1,10 +1,11 @@
 package com.example.lab14.model;
 
+import com.example.lab14.dataBase.AllMovements;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
 public class MovementList {
-    ObservableList<Movement> movements = FXCollections.observableArrayList();
+    ObservableList<Movement> movements;
 
     private MovementList (){
 
@@ -21,5 +22,11 @@ public class MovementList {
     public ObservableList<Movement> getMovements(){
         return movements;
     }
+
+    public void setMovements (int option){
+        this.movements = FXCollections.observableArrayList(AllMovements.getInstance().getList(option));
+    }
+
+
 
 }

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab14.SaveMovementController">
+   <children>
+      <VBox layoutX="204.0" layoutY="98.0" prefHeight="173.0" prefWidth="191.0">
+         <children>
+            <Label text="Ingrese el monto total" />
+            <TextField fx:id="amountTF" promptText="Monto">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Seleccione el tipo de movimiento" />
+            <ChoiceBox fx:id="typeCB" prefWidth="150.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </ChoiceBox>
+            <Label text="Ingrese una descripcion" />
+            <TextArea fx:id="descriptionTA" prefHeight="200.0" prefWidth="200.0" promptText="Descripcion">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextArea>
+            <Label text="Seleccione la fecha" />
+            <DatePicker fx:id="dateDP" />
+         </children>
+      </VBox>
+      <Button fx:id="saveBTN" layoutX="270.0" layoutY="333.0" mnemonicParsing="false" text="Guardar" />
+      <Label layoutX="204.0" layoutY="26.0" prefHeight="27.0" prefWidth="191.0" text="Guardar un movimiento" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

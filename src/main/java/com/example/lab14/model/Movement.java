@@ -1,14 +1,16 @@
 package com.example.lab14.model;
 
+import java.util.Date;
+
 public class Movement {
 
     private String type;
 
     private double amount;
     private String description;
-    private long date;
+    private Date date;
 
-    public Movement(String type, double amount, String description, long date) {
+    public Movement(String type, double amount, String description, Date date) {
         this.type = type;
         this.amount = amount;
         this.description = description;
@@ -39,11 +41,11 @@ public class Movement {
         this.description = description;
     }
 
-    public long getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(long date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 }
